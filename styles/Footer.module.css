@@ -1,0 +1,19 @@
+.foot{
+
+    width:100%;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    color:white;
+
+}
+
+  
+  .foot a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
