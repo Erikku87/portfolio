@@ -5,7 +5,7 @@ const header = () => {
         <div>
             <h1 className="title">
                 <span>
-                    Welcome to my portfolio!
+                    
                 </span>
             </h1>
             

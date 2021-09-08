@@ -12,16 +12,18 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: none;
     
-    transition: all 2s;
+    transition: all 1s;
+    opacity:0;
 }
 
 .profilepic{
   width:0%;
   height:100%;
   background-image: url("/images/profilepic.jpg");
-
+ 
+  background-position: center;
   background-size:cover;
-  transition: all 3s;
+  transition: all 2s;
 }
 
 .profileinfo{

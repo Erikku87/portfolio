@@ -8,7 +8,7 @@ const Portfolio = () => {
     
     
     return (
-    <div className={stylesPortfolio.portfolioFrame}>    
+    <div id="portfolioframe" className={stylesPortfolio.portfolioFrame}>    
         <div className={ `${stylesPortfolio.portfolioColor} ${stylesPortfolio.portfolioSize}` }>
             
                     <div className="row">
@@ -90,6 +90,17 @@ const Portfolio = () => {
             </div>
     </div>)
 }
+
+if (typeof window === 'object') {
+    // Check if document is finally loaded
+    window.addEventListener("load", function(){
+           //alert('Finished loading')
+
+           document.getElementById("portfolioframe").style.opacity = "1";
+           document.getElementById("portfolioframe").style.margin = "0px";
+           
+         });
+      }
 
 export default Portfolio
 
