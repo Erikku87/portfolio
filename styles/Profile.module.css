@@ -1,28 +1,31 @@
 .profile{
     width:60%;
     height:400px;
+    min-width:750px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin:50px;
+    overflow:hidden;
     color:black;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: none;
     
+    transition: all 2s;
 }
 
 .profilepic{
-    width:40%;
-    height:100%;
-    background-image: url("/images/profilepic.jpg");
+  width:0%;
+  height:100%;
+  background-image: url("/images/profilepic.jpg");
 
-    background-size:cover;
-
+  background-size:cover;
+  transition: all 3s;
 }
 
 .profileinfo{
-    width:60%;
+    width:0%;
     height:100%;
     display: flex;
     align-items: center;
@@ -31,6 +34,8 @@
     background-color:white;
     font-size: 0.85rem;
     border: 1px solid black;
+    overflow:hidden;
+    transition: all 2s;
 
 }
 

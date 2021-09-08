@@ -1,11 +1,13 @@
 import stylesProfile from '../styles/Profile.module.css'
+import React, {useEffect} from "react";
+
 
 const Profile = () => {
     return (
-        <div className={stylesProfile.profile}>
-            <div className={stylesProfile.profilepic}>
+        <div id="profile" className={stylesProfile.profile}>
+            <div id="profilepicture" className={stylesProfile.profilepic}>
             </div>
-            <div className={stylesProfile.profileinfo}>
+            <div id="profileinfo" className={stylesProfile.profileinfo}>
             <ul>
                 <li className={stylesProfile.label}>Naam:</li>
                 <li>Eric Tjhie</li>
@@ -21,5 +23,15 @@ const Profile = () => {
         </div>
     )
 }
+
+if (typeof window === 'object') {
+    // Check if document is finally loaded
+    window.addEventListener("load", function(){
+           //alert('Finished loading')
+           document.getElementById("profilepicture").style.width = "40%";
+           document.getElementById("profileinfo").style.width = "60%";
+           //document.getElementById("profile").style.width = "60%";
+         });
+      }
 
 export default Profile

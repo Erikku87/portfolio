@@ -1,14 +1,30 @@
 .portfolioColor{
-  border: 1px solid black;
-}
 
+}
+.portfolioFrame{
+  width:100%;
+  
+
+}
 .portfolioSize{
   width:100%;
-  height:500px;
+  height:300px;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 
 }
 
+.portfolioItem{
+  width:100%;
+
+
+
+}
+
+
+.thumb{
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+
+}
