@@ -4,6 +4,7 @@ import React, {useEffect} from "react";
 
 const Profile = () => {
     return (
+        <div className={stylesProfile.profileframe}>
         <div id="profile" className={stylesProfile.profile}>
             <div id="profilepicture" className={stylesProfile.profilepic}>
             </div>
@@ -21,16 +22,19 @@ const Profile = () => {
             </ul>
             </div>
         </div>
+        </div>
     )
 }
 
 if (typeof window === 'object') {
-    // Check if document is finally loaded
+ 
     window.addEventListener("load", function(){
            //alert('Finished loading')
            document.getElementById("profilepicture").style.width = "35%";
            document.getElementById("profileinfo").style.width = "65%";
            document.getElementById("profile").style.opacity = "1";
+
+           
            
          });
       }

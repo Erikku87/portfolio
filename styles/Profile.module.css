@@ -1,5 +1,13 @@
+.profileframe{
+width:100%;
+display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
 .profile{
-    width:60%;
+    
     height:400px;
     min-width:750px;
     display: flex;
@@ -12,8 +20,11 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: none;
     
-    transition: all 1s;
+    transition: all 3s;
     opacity:0;
+ 
+
+    margin-top:7%;
 }
 
 .profilepic{
@@ -24,6 +35,7 @@
   background-position: center;
   background-size:cover;
   transition: all 2s;
+  opacity:1;
 }
 
 .profileinfo{
@@ -32,12 +44,13 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left:50px;
-    background-color:white;
+    padding-left:60px;
+    background: rgba(0, 0, 0, .3);
     font-size: 0.85rem;
-    border: 1px solid black;
+    
     overflow:hidden;
-    transition: all 2s;
+    transition: all 1.5s;
+    color:white;
 
 }
 
@@ -56,3 +69,4 @@
   .label{
     font-weight: bold;
   }
+

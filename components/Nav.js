@@ -3,7 +3,7 @@ import navStyles from '../styles/Nav.module.css'
 
 const nav = () => {
     return (
-        <nav className={navStyles.nav}>
+        <nav className={ `${navStyles.nav} fixed-top` }>
             <ul>
                 <li>
                     <Link href='/'>Beats</Link>

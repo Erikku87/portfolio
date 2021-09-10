@@ -1,18 +1,19 @@
 .container {
+  
   width:100%;
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
-  border: 3px solid red;
+  background-image: url("/images/sterren.jpg");
+    background-size:cover;
 }
 
 .main {
   width:100%;
-  padding: 5rem 20rem;
+  padding: 0px !important;
   flex: 1;
   display: flex;
   flex-direction: column;

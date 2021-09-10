@@ -4,7 +4,7 @@ import footerStyles from '../styles/Footer.module.css'
 const footer = () => {
     return (
         <div className={footerStyles.foot}>
-            <p>Footer</p>
+            Copyright © Erikkudesign.com 2021. all rights reserved. 
             
         </div>
     )

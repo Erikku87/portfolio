@@ -4,6 +4,7 @@ import Portfolio from './Portfolio'
 import Header from './Header'
 import styles from '../styles/Layout.module.css'
 import Profile from './Profile'
+import Modal from './Modal'
 
 
 
@@ -19,6 +20,7 @@ const Layout = ({children}) => {
                     <Profile />
                     <br />
                     <Portfolio />
+                    
                     
                 </main>
                 
