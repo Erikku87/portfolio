@@ -6,7 +6,7 @@ const nav = () => {
         <nav className={ `${navStyles.nav} fixed-top` }>
             <ul>
                 <li>
-                    <Link href='/'><h3>Porfolio</h3></Link>
+                    <Link href='/' onClick={scrollToTop}><h3>Porfolio</h3></Link>
                 </li>
                 {/* <li>
                     <Link href='/about'>About</Link>
@@ -24,5 +24,8 @@ const nav = () => {
         
     )
 }
-
+  // This function will scroll the window to the top 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 export default nav

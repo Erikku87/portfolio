@@ -4,9 +4,7 @@ import Portfolio from "./Portfolio";
 // reactstrap components
 import { Button, Modal, ModalBody, ModalFooter } from "reactstrap";
 
-export default class Modal extends Component{
-  
-}
+
 
 function modalOverlay(port) {
 

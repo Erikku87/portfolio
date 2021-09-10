@@ -121,7 +121,53 @@ const Portfolio = () => {
                         </div>
 
                         
-                        <div id="5" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(3)}>
+                        <div id="8" className={ `${stylesPortfolio.portfolioItem} col` } >
+                        <Link href='https://ninetysixmusic.com' passHref>
+                        <a target="_blank" rel="noreferrer">
+                        <Image
+                        alt={`Nothing here`}
+                        src={`/images/96.jpg`}
+                        width={420}
+                        height={300}
+                        priority
+                        />
+                        </a>
+                        </Link>
+                        </div>
+                        <div id="6" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(3)}>
+                        <Image
+                        alt={`Nothing here`}
+                        src={`/images/zenchirecords.jpg`}
+                        width={420}
+                        height={300}
+                        priority
+                        />
+                        </div>
+
+                        <style jsx>{`
+                            .row {
+                            width:100%;
+                            }`}
+                        </style>
+                    </div>
+            </div>
+            <div className={ `${stylesPortfolio.portfolioColor} ${stylesPortfolio.portfolioSize}` }>
+            
+                    <div className="row">
+                    
+                                
+                    <div id="7" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(4)}>
+                        <Image
+                        alt={`Nothing here`}
+                        src={`/images/staggeringdesign.jpg`}
+                        width={420}
+                        height={300}
+                        priority
+                        />
+                        </div>
+
+                        
+                        <div id="9" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(5)}>
                         <Image
                         alt={`Nothing here`}
                         src={`/images/platysign.jpg`}
@@ -130,102 +176,56 @@ const Portfolio = () => {
                         priority
                         />
                         </div>
-                        <div id="6" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(4)}>
+                        <div id="9" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(6)}>
+                        <Image
+                        alt={`Nothing here`}
+                        src={`/images/hoornse.jpg`}
+                        width={420}
+                        height={300}
+                        priority
+                        />
+                        </div>
+
+                        <style jsx>{`
+                            .row {
+                            width:100%;
+                            }`}
+                        </style>
+                    </div>
+            </div>
+            <div className={ `${stylesPortfolio.portfolioColor} ${stylesPortfolio.portfolioSize}` }>
+            
+                    <div className="row">
+                    
+                                
+                    <div id="10" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(7)}>
+                        <Image
+                        alt={`Nothing here`}
+                        src={`/images/photomaster.jpg`}
+                        width={420}
+                        height={300}
+                        priority
+                        />
+                        </div>
+
+                        
+                        <div id="6" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(8)}>
+                        <Link href='https://ninetysixmusic.com' passHref>
+                        <a target="_blank" rel="noreferrer">
+                        <Image
+                        alt={`Nothing here`}
+                        src={`/images/bnt.jpg`}
+                        width={420}
+                        height={300}
+                        priority
+                        />
+                        </a>
+                        </Link>
+                        </div>
+                        <div id="12" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(9)}>
                         <Image
                         alt={`Nothing here`}
                         src={`/images/woordenschat.jpg`}
-                        width={420}
-                        height={300}
-                        priority
-                        />
-                        </div>
-
-                        <style jsx>{`
-                            .row {
-                            width:100%;
-                            }`}
-                        </style>
-                    </div>
-            </div>
-            <div className={ `${stylesPortfolio.portfolioColor} ${stylesPortfolio.portfolioSize}` }>
-            
-                    <div className="row">
-                    
-                                
-                    <div id="6" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(5)}>
-                        <Image
-                        alt={`Nothing here`}
-                        src={`/images/staggeringdesign.jpg`}
-                        width={420}
-                        height={300}
-                        priority
-                        />
-                        </div>
-
-                        
-                        <div id="4" className={ `${stylesPortfolio.portfolioItem} col` } >
-                        <Link href='https://ninetysixmusic.com' passHref>
-                        <a target="_blank" rel="noreferrer">
-                        <Image
-                        alt={`Nothing here`}
-                        src={`/images/96.jpg`}
-                        width={420}
-                        height={300}
-                        priority
-                        />
-                        </a>
-                        </Link>
-                        </div>
-                        <div id="9" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(6)}>
-                        <Image
-                        alt={`Nothing here`}
-                        src={`/images/hoornse.jpg`}
-                        width={420}
-                        height={300}
-                        priority
-                        />
-                        </div>
-
-                        <style jsx>{`
-                            .row {
-                            width:100%;
-                            }`}
-                        </style>
-                    </div>
-            </div>
-            <div className={ `${stylesPortfolio.portfolioColor} ${stylesPortfolio.portfolioSize}` }>
-            
-                    <div className="row">
-                    
-                                
-                    <div id="6" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(5)}>
-                        <Image
-                        alt={`Nothing here`}
-                        src={`/images/staggeringdesign.jpg`}
-                        width={420}
-                        height={300}
-                        priority
-                        />
-                        </div>
-
-                        
-                        <div id="4" className={ `${stylesPortfolio.portfolioItem} col` } >
-                        <Link href='https://ninetysixmusic.com' passHref>
-                        <a target="_blank" rel="noreferrer">
-                        <Image
-                        alt={`Nothing here`}
-                        src={`/images/96.jpg`}
-                        width={420}
-                        height={300}
-                        priority
-                        />
-                        </a>
-                        </Link>
-                        </div>
-                        <div id="9" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(6)}>
-                        <Image
-                        alt={`Nothing here`}
-                        src={`/images/hoornse.jpg`}
                         width={420}
                         height={300}
                         priority
@@ -250,8 +250,8 @@ export async function portfolioClick(portfolio){
 
 //currentPortfolio = this.portfolio;    
 //Modal.modalOverlay(currentPortfolio);
-
-alert(portfolio);
+Modal.modalOverlay(portfolio);
+//alert(portfolio);
 }
 
 
