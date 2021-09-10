@@ -6,9 +6,9 @@ const nav = () => {
         <nav className={ `${navStyles.nav} fixed-top` }>
             <ul>
                 <li>
-                    <Link href='/'>Beats</Link>
+                    <Link href='/'><h3>Porfolio</h3></Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link href='/about'>About</Link>
                 </li>
                 <li>
@@ -16,7 +16,7 @@ const nav = () => {
                 </li>
                 <li>
                     <Link href='/about'>Contact</Link>
-                </li>
+                </li> */}
             
             </ul>
         </nav>

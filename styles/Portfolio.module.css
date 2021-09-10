@@ -37,18 +37,18 @@
 }
 .portfolioHeader{
   width:100%;
-  height:110px;
+  height:100px;
   opacity:0;
   transition: all 1s;
   color:white;
   
   background-image: url("/images/sterren.jpg");
-  background-position:10% 42%;
+  background-position:0% 32%;
   display: flex;
     align-items: center;
     justify-content: flex-start;  
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    filter: brightness(85%);;
+    -webkit-filter: brightness(90%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .portfolioHeaderText{
@@ -64,3 +64,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

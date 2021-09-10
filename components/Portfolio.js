@@ -9,10 +9,53 @@ import Modal from "./Modal"
 
 const Portfolio = () => {
 
+    var portfolios = [
+
+        {
+            //starts at 0
+        "name" : "Octo",
+        "Description" : "blablabla ik heb voor Octo gewerkt",
+        "URL" : "https://octo.nu"
+        },
+        {
+        "name" : "waarderuil",
+        "Description" : "blablabla ik heb voor Octo gewerkt",
+        "URL" : "https://octo.nu"
+        },
+        {
+        "name" : "JT Photography",
+        "Description" : "blablabla ik heb voor Octo gewerkt",
+        "URL" : "https://octo.nu"
+        },
+        {
+        "name" : "Platysign",
+        "Description" : "blablabla ik heb voor Octo gewerkt",
+        "URL" : "https://octo.nu"
+        },
+        {
+        "name" : "Woordenschat",
+        "Description" : "blablabla ik heb voor Octo gewerkt",
+        "URL" : "https://octo.nu"
+        },
+        {
+        "name" : "Staggering Design",
+        "Description" : "blablabla ik heb voor Octo gewerkt",
+        "URL" : "https://octo.nu"
+        },
+        {
+        "name" : "Ninetysix Music",
+        "Description" : "blablabla ik heb voor Octo gewerkt",
+        "URL" : "https://octo.nu"
+        }
+    ]
+
+    console.log(portfolios[0].name);
+
+    //let portfolio = cars.find(car => car.color === "red");
     return (
         <>
  
-        <div id="portfolioHeader" className={stylesPortfolio.portfolioHeader}>
+        <div id="portfolioHeader" className={`${stylesPortfolio.portfolioHeader} ${stylesPortfolio.greenglow} ${stylesPortfolio.greenglow2}` }>
             <div className={stylesPortfolio.portfolioHeaderText}><h1>My Projects</h1></div>
             </div>
 
@@ -20,7 +63,7 @@ const Portfolio = () => {
         <div className={ `${stylesPortfolio.portfolioColor} ${stylesPortfolio.portfolioSize}` }>
             
                     <div className="row">
-                    <div id="1" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(1)}>                   
+                    <div id="1" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(0)}>                   
              
                         <Image
                         alt={`Nothing here`}
@@ -32,7 +75,7 @@ const Portfolio = () => {
                     
                      
                         </div>
-                        <div id="2" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(2)}>
+                        <div id="2" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(1)}>
                         <Image
                         alt={`Nothing here`}
                         src={`/images/waarderuil.jpg`}
@@ -41,7 +84,7 @@ const Portfolio = () => {
                         priority
                         />
                         </div>
-                        <div id="3" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(3)}>
+                        <div id="3" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(2)}>
                         <Image
                         alt={`Nothing here`}
                         src={`/images/jt.jpg`}
@@ -78,7 +121,7 @@ const Portfolio = () => {
                         </div>
 
                         
-                        <div id="5" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(4)}>
+                        <div id="5" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(3)}>
                         <Image
                         alt={`Nothing here`}
                         src={`/images/platysign.jpg`}
@@ -87,7 +130,7 @@ const Portfolio = () => {
                         priority
                         />
                         </div>
-                        <div id="6" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(5)}>
+                        <div id="6" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(4)}>
                         <Image
                         alt={`Nothing here`}
                         src={`/images/woordenschat.jpg`}
@@ -109,9 +152,7 @@ const Portfolio = () => {
                     <div className="row">
                     
                                 
-                        <div id="7" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(6)}>
-                        <Link href='https://rumah-afra.com' passHref>
-                        <a target="_blank" rel="noreferrer">
+                    <div id="6" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(5)}>
                         <Image
                         alt={`Nothing here`}
                         src={`/images/staggeringdesign.jpg`}
@@ -119,12 +160,12 @@ const Portfolio = () => {
                         height={300}
                         priority
                         />
-                        </a>
-                        </Link>
                         </div>
 
                         
-                        <div id="8" className={ `${stylesPortfolio.portfolioItem} col` } >
+                        <div id="4" className={ `${stylesPortfolio.portfolioItem} col` } >
+                        <Link href='https://ninetysixmusic.com' passHref>
+                        <a target="_blank" rel="noreferrer">
                         <Image
                         alt={`Nothing here`}
                         src={`/images/96.jpg`}
@@ -132,8 +173,56 @@ const Portfolio = () => {
                         height={300}
                         priority
                         />
+                        </a>
+                        </Link>
                         </div>
-                        <div id="9" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(7)}>
+                        <div id="9" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(6)}>
+                        <Image
+                        alt={`Nothing here`}
+                        src={`/images/hoornse.jpg`}
+                        width={420}
+                        height={300}
+                        priority
+                        />
+                        </div>
+
+                        <style jsx>{`
+                            .row {
+                            width:100%;
+                            }`}
+                        </style>
+                    </div>
+            </div>
+            <div className={ `${stylesPortfolio.portfolioColor} ${stylesPortfolio.portfolioSize}` }>
+            
+                    <div className="row">
+                    
+                                
+                    <div id="6" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(5)}>
+                        <Image
+                        alt={`Nothing here`}
+                        src={`/images/staggeringdesign.jpg`}
+                        width={420}
+                        height={300}
+                        priority
+                        />
+                        </div>
+
+                        
+                        <div id="4" className={ `${stylesPortfolio.portfolioItem} col` } >
+                        <Link href='https://ninetysixmusic.com' passHref>
+                        <a target="_blank" rel="noreferrer">
+                        <Image
+                        alt={`Nothing here`}
+                        src={`/images/96.jpg`}
+                        width={420}
+                        height={300}
+                        priority
+                        />
+                        </a>
+                        </Link>
+                        </div>
+                        <div id="9" className={ `${stylesPortfolio.portfolioItem} col` } onClick={() => portfolioClick(6)}>
                         <Image
                         alt={`Nothing here`}
                         src={`/images/hoornse.jpg`}
@@ -161,6 +250,7 @@ export async function portfolioClick(portfolio){
 
 //currentPortfolio = this.portfolio;    
 //Modal.modalOverlay(currentPortfolio);
+
 alert(portfolio);
 }
 
