@@ -4,10 +4,15 @@ import Portfolio from "./Portfolio";
 // reactstrap components
 import { Button, Modal, ModalBody, ModalFooter } from "reactstrap";
 
+export default class Modal extends Component{
+  
+}
+
 function modalOverlay(port) {
 
 currentPortfolio = this.port;
-
+//alert(currentPortfolio);
+//alert("modalOverlay() triggered");
   const [modalOpen, setModalOpen] = React.useState(false);
   return (
     <>
@@ -17,7 +22,7 @@ currentPortfolio = this.port;
       <Modal toggle={() => setModalOpen(!modalOpen)} isOpen={modalOpen}>
         <div className=" modal-header">
           <h5 className=" modal-title" id="exampleModalLabel">
-            Modal title
+           {Portfolio.portfolios[0].name}
           </h5>
           <button
             aria-label="Close"
