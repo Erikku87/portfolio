@@ -5,7 +5,7 @@ export default function Home() {
   <div>
     <Head>
       <title>
-          WebDev News
+          Eric Tjhie
       </title>
       <meta name='keywords' content='web development, programming' />
 
