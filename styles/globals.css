@@ -1,10 +1,22 @@
 html,
 body {
-  padding: 0;
+  padding: 0 !important;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+button {
+  margin: 0;
+   font-family: initial !important; 
+  font-size: 40px !important;
+   line-height: normal !important;
+}
+.modal-footer button{
+
+  font-size: 20px !important;
+   line-height: normal !important;
+}
+
 li{
 
   cursor:pointer;
@@ -110,4 +122,46 @@ header a, a:visited {
   -webkit-animation:move-twink-back 200s linear infinite;
   animation:move-twink-back 200s linear infinite;
 }
+/* MODAL STYLE */
+.modal.show .modal-dialog {
 
+  margin-top: 10% !important;
+
+    max-width: 700px;
+}
+
+.modal-header {
+padding:5px 20px 5px 20px !important;
+}
+
+/* cross */
+.cross {
+  height: 50px;
+  width: 50px;
+  background-color: #000000;
+  border-radius: 5px;
+  position: relative;
+}
+
+.cross:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "\274c"; /* use the hex value here... */
+  font-size: 25px; 
+  color: #FFF;
+  line-height: 50px;
+  text-align: center;
+}
+
+.close{
+
+height:50px;
+ background-color:none;
+ font-size:40px; 
+ display:hidden;
+ background-color: white;
+ border:none;
+}

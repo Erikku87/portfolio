@@ -1,0 +1,11 @@
+.modal.show .modal-dialog {
+    -webkit-transform: none;
+    margin-top: 20%;
+    transform: none;
+}
+
+.modalImage{
+
+    width:400px;
+    height:320px;
+}
