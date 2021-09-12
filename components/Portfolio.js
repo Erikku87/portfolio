@@ -31,12 +31,12 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: "/images/jt.jpg",
-      alt: "jt",
-      name: "JT Photography",
+      src: "/images/zenchirecords.jpg",
+      alt: "Zenchi Records",
+      name: "Zenchi Records",
       description:
         "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
+      url: "https://zenchirecords.com",
       image: "",
     },
     {
@@ -61,12 +61,12 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      src: "/images/zenchirecords.jpg",
-      alt: "zenchirecords",
-      name: "Zenchi Records",
+      src: "/images/woordenschat.jpg",
+      alt: "Woordenschat",
+      name: "Woordenschat",
       description:
         "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://zenchirecords.com",
+      url: "https://www.youtube.com/watch?v=Tn8zJkGMKiU&t=28s ",
       image: "",
     },
     {
@@ -121,12 +121,12 @@ const Portfolio = () => {
     },
     {
       id: 11,
-      src: "/images/woordenschat.jpg",
-      alt: "woordenschat",
-      name: "Woordenschat",
+      src: "/images/jt.jpg",
+      alt: "JT Photography",
+      name: "JT Photography",
       description:
         "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://www.youtube.com/watch?v=Tn8zJkGMKiU&t=28s",
+      url: "",
       image: "",
     },
   ];
