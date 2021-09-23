@@ -1,5 +1,9 @@
 module.exports = {
   reactStrictMode: true,
+  images: {
+    loader: 'imgix',
+    path: 'https://portfolio.zenchirecords.com/public',
+  }
+
+
 }
-const withImages = require('next-images')
-module.exports = withImages()
