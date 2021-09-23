@@ -1,136 +1,14 @@
 import stylesPortfolio from "../styles/Portfolio.module.css";
 import stylesModal from "../styles/Modal.module.css";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { Row } from "reactstrap";
 import { Col } from "reactstrap";
+import { portfolios } from "../db";
+
 
 const Portfolio = () => {
-  const portfolios = [
-    {
-      id: 0,
-      src: "/images/octo.jpg",
-      alt: "Octo",
-      name: "Octo",
-      description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
-      image: "",
-    },
-    {
-      id: 1,
-      src: "/images/waarderuil.jpg",
-      alt: "waarderuil",
-      name: "waarderuil",
-      description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
-      image: "",
-    },
-    {
-      id: 2,
-      src: "/images/zenchirecords.jpg",
-      alt: "Zenchi Records",
-      name: "Zenchi Records",
-      description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://zenchirecords.com",
-      image: "",
-    },
-    {
-      id: 3,
-      src: "/images/rumah-afra.jpg",
-      alt: "rumah-afra",
-      name: "Rumah-Afra",
-      description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://rumah-afra.com",
-      image: "",
-    },
-    {
-      id: 4,
-      src: "/images/96.jpg",
-      alt: "96",
-      name: "Ninetysix Music",
-      description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://ninetysixmusic.com",
-      image: "",
-    },
-    {
-      id: 5,
-      src: "/images/woordenschat.jpg",
-      alt: "Woordenschat",
-      name: "Woordenschat",
-      description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://www.youtube.com/watch?v=Tn8zJkGMKiU&t=28s ",
-      image: "",
-    },
-    {
-      id: 6,
-      src: "/images/staggeringdesign.jpg",
-      alt: "staggeringdesign",
-      name: "Staggering Design",
-      description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
-      image: "",
-    },
-    {
-      id: 7,
-      src: "/images/platysign.jpg",
-      alt: "platysign",
-      name: "Platysign",
-      description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
-      image: "",
-    },
-    {
-      id: 8,
-      src: "/images/hoornse.jpg",
-      alt: "hoornse",
-      name: "Hoornse",
-      description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
-      image: "",
-    },
-    {
-      id: 9,
-      src: "/images/photomaster.jpg",
-      alt: "photomaster",
-      name: "Photomaster",
-      description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
-      image: "",
-    },
-    {
-      id: 10,
-      src: "/images/bnt.jpg",
-      alt: "bnt",
-      name: "BNT",
-      description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
-      image: "",
-    },
-    {
-      id: 11,
-      src: "/images/jt.jpg",
-      alt: "JT Photography",
-      name: "JT Photography",
-      description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "",
-      image: "",
-    },
-  ];
-
   const [modal0, setModal0] = useState(false);
   const [modal1, setModal1] = useState(false);
   const [modal2, setModal2] = useState(false);
@@ -161,6 +39,20 @@ const Portfolio = () => {
   const imgHeight = 300;
   const priority = true;
 
+
+  const setClipButtons = (portfolio) => {
+    if (portfolio.clip) {
+      return (
+        <Button color="primary" onClick={eval(`toggle${portfolio.id}`)}>
+            <a href={portfolio.clip} target="blank_">
+             
+              Video
+            </a>
+          </Button>
+      )
+    }
+  }
+
   const setCurrentModal = (portfolio) => {
     return (
       <Modal
@@ -187,6 +79,9 @@ const Portfolio = () => {
           </Row>
         </ModalBody>
         <ModalFooter>
+
+          {setClipButtons(portfolio)}
+
           <Button color="primary" onClick={eval(`toggle${portfolio.id}`)}>
             <a href={portfolio.url} target="blank_">
               {" "}
@@ -197,6 +92,7 @@ const Portfolio = () => {
           <Button color="secondary" onClick={eval(`toggle${portfolio.id}`)}>
             Close
           </Button>
+          
         </ModalFooter>
       </Modal>
     );
