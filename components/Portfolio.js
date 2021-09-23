@@ -7,6 +7,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { Row } from "reactstrap";
 import { Col } from "reactstrap";
 
+
 const Portfolio = () => {
   const portfolios = [
     {
@@ -15,8 +16,9 @@ const Portfolio = () => {
       alt: "Octo",
       name: "Octo",
       description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
+        "I Started working at Octo as a freelance developer to create their first website. I have worked there for a year and created the design, front-end and back-end for the website. Now a few years later they turned into to Spotr.ai. Here's an impressions of the website i build for them:",
       url: "https://octo.nu",
+      clip: "/movies/octo_frontpage.mp4",
       image: "",
     },
     {
@@ -25,8 +27,8 @@ const Portfolio = () => {
       alt: "waarderuil",
       name: "waarderuil",
       description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
+        "Waarderuil.nl is one of my personal projects. The goal is to create a platform that makes it easy for people to find and trade the right stuff so we can make this planet and it's resources more sustainable. ",
+      url: "https://portfolio.zenchirecords.com/waarderuil/",
       image: "",
     },
     {
@@ -35,7 +37,7 @@ const Portfolio = () => {
       alt: "Zenchi Records",
       name: "Zenchi Records",
       description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
+        "Next to a developer I also like to call myself a musician. Zenchi records is to be the website where I will publish my music to the world!",
       url: "https://zenchirecords.com",
       image: "",
     },
@@ -45,7 +47,7 @@ const Portfolio = () => {
       alt: "rumah-afra",
       name: "Rumah-Afra",
       description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
+        "Rumah Afra is an artist. She is a dancer who likes to write and show her minimalistic lifestyle. Together we have come to a website which expresses exactly who she is.",
       url: "https://rumah-afra.com",
       image: "",
     },
@@ -55,7 +57,7 @@ const Portfolio = () => {
       alt: "96",
       name: "Ninetysix Music",
       description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
+        "Ninetysixmusic is an artist who makes music. Together we have created a really out of the box website to express her image as a musician.",
       url: "https://ninetysixmusic.com",
       image: "",
     },
@@ -65,8 +67,9 @@ const Portfolio = () => {
       alt: "Woordenschat",
       name: "Woordenschat",
       description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://www.youtube.com/watch?v=Tn8zJkGMKiU&t=28s ",
+        "OWG is an organisation that creates educational games for children. They asked me to make a game where people could learn a language trough pictures and words ",
+      url: " https://www.youtube.com/watch?v=Tn8zJkGMKiU&t=28s ",
+      clip: "/movies/woordenschat.mp4",
       image: "",
     },
     {
@@ -75,8 +78,8 @@ const Portfolio = () => {
       alt: "staggeringdesign",
       name: "Staggering Design",
       description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
+        "Staggering Design was a small IT company that delivered IT solutions. This is the website i made for them.",
+      url: "https://portfolio.zenchirecords.com/Staggering_prototype",
       image: "",
     },
     {
@@ -85,8 +88,8 @@ const Portfolio = () => {
       alt: "platysign",
       name: "Platysign",
       description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
+        "Platysign was my own first IT company which i started with some friends i knew from college. We did this for a couple of years but then went our own ways.",
+      url: "https://portfolio.zenchirecords.com/platysign",
       image: "",
     },
     {
@@ -95,8 +98,8 @@ const Portfolio = () => {
       alt: "hoornse",
       name: "Hoornse",
       description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
+        "De Hoornse Damper is a store that sells vapes and supplies. I made a website for browsing their products and making a store order.",
+      url: "",
       image: "",
     },
     {
@@ -105,32 +108,35 @@ const Portfolio = () => {
       alt: "photomaster",
       name: "Photomaster",
       description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
+        "Photomaster was a photo competition where people had to send in their best shots to win a prize. This is the design i made for them.",
+      url: "https://portfolio.zenchirecords.com/photomaster_prototype",
       image: "",
     },
     {
+      
       id: 10,
-      src: "/images/bnt.jpg",
-      alt: "bnt",
-      name: "BNT",
-      description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "https://octo.nu",
-      image: "",
-    },
-    {
-      id: 11,
       src: "/images/jt.jpg",
       alt: "JT Photography",
       name: "JT Photography",
       description:
-        "blablabla ik heb voor Octo gewerkt. Goeie bedrijf je weet zelf, ook andere mooie shizzles gemaakt, html, css, javascript, je weet zeluf. Beter gewoon nu aannemen of ik geef je eentje op je bolus.",
-      url: "",
+        "Jonai Tan is a freelance photographer. He asked me to create a portfolio for him where people can find his work. This is the design I made for him",
+      url: "https://portfolio.zenchirecords.com/JT_photography",
+      image: "",
+    },
+    {
+      id: 11,
+      src: "/images/bnt.jpg",
+      alt: "bnt",
+      name: "BNT",
+      description:
+        "B&T Jeans was a small online pants selling company, this is the design i made for them.",
+      url: "https://portfolio.zenchirecords.com/BNT",
       image: "",
     },
   ];
 
+
+  
   const [modal0, setModal0] = useState(false);
   const [modal1, setModal1] = useState(false);
   const [modal2, setModal2] = useState(false);
@@ -187,6 +193,14 @@ const Portfolio = () => {
           </Row>
         </ModalBody>
         <ModalFooter>
+
+        <Button color="primary" onClick={eval(`toggle${portfolio.id}`)}>
+            <a href={portfolio.clip} target="blank_">
+             
+              Video
+            </a>
+          </Button>
+
           <Button color="primary" onClick={eval(`toggle${portfolio.id}`)}>
             <a href={portfolio.url} target="blank_">
               {" "}
@@ -197,6 +211,7 @@ const Portfolio = () => {
           <Button color="secondary" onClick={eval(`toggle${portfolio.id}`)}>
             Close
           </Button>
+          
         </ModalFooter>
       </Modal>
     );
