@@ -6,7 +6,7 @@ const nav = () => {
         <nav className={`${navStyles.nav} fixed-top`}>
             <ul>
                 <li>
-                    <Link href='/' onClick={scrollToTop}><h3>Porfolio</h3></Link>
+                    <Link href="/" onClick={scrollToTop}><a>Porfolio</a></Link>
                 </li>
                 {/* <li>
                     <Link href='/about'>About</Link>
