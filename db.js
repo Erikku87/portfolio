@@ -5,10 +5,12 @@ export const portfolios = [
     alt: "Octo",
     name: "Octo",
     description:
-      "I Started working at Octo as a freelance developer to create their first website. I have worked there for a year and created the design, front-end and back-end for the website. Now a few years later they turned into to Spotr.ai. Here's an impressions of the website i build for them:",
+      "I Started working at Octo as a freelance developer to create their first website. I have worked there for a year and created the design, front-end and back-end for the website. Now a few years later they turned into to Spotr.ai. Watch the video to see what I built for them.",
     url: "https://octo.nu",
     clip: "/movies/octo_frontpage.mp4",
     image: "",
+    codes: "HTML, CSS, Javascript, PHP, SVG",
+    tools: "Wordpress, Illustrator, Photo Shop, Figma, VPS",
   },
   {
     id: 1,
@@ -19,6 +21,8 @@ export const portfolios = [
       "Waarderuil.nl is one of my personal projects. The goal is to create a platform that makes it easy for people to find and trade the right stuff so we can make this planet and it's resources more sustainable. ",
     url: "https://portfolio.zenchirecords.com/waarderuil/",
     image: "",
+    codes: "HTML, CSS, Javascript",
+    tools: "Illustrator, Photo Shop, Figma",
   },
   {
     id: 2,
@@ -29,6 +33,8 @@ export const portfolios = [
       "Next to a developer I also like to call myself a musician. Zenchi records is to be the website where I will publish my music to the world!",
     url: "https://zenchirecords.com",
     image: "",
+    codes: "HTML, CSS, Javascript",
+    tools: "Illustrator, Photo Shop, Figma, VPS",
   },
   {
     id: 3,
@@ -39,6 +45,8 @@ export const portfolios = [
       "Rumah Afra is an artist. She is a dancer who likes to write and show her minimalistic lifestyle. Together we have come to a website which expresses exactly who she is.",
     url: "https://rumah-afra.com",
     image: "",
+    codes: "HTML, CSS, Javascript, PHP",
+    tools: "Wordpress, Illustrator, Photo Shop",
   },
   {
     id: 4,
@@ -49,6 +57,8 @@ export const portfolios = [
       "Ninetysixmusic is an artist who makes music. Together we have created a really out of the box website to express her image as a musician.",
     url: "https://ninetysixmusic.com",
     image: "",
+    codes: "HTML, CSS, Javascript",
+    tools: "Wordpress, Illustrator, Photo Shop",
   },
   {
     id: 5,
@@ -60,6 +70,8 @@ export const portfolios = [
     url: " https://www.youtube.com/watch?v=Tn8zJkGMKiU&t=28s ",
     clip: "/movies/woordenschat.mp4",
     image: "",
+    codes: "HTML, CSS, Javascript, PHP, XML",
+    tools: "Illustrator, Photo Shop",
   },
   {
     id: 6,
@@ -70,6 +82,8 @@ export const portfolios = [
       "Staggering Design was a small IT company that delivered IT solutions. This is the website i made for them.",
     url: "https://portfolio.zenchirecords.com/Staggering_prototype",
     image: "",
+    codes: "HTML, CSS, Javascript",
+    tools: "Illustrator, Photo Shop, Sketch",
   },
   {
     id: 7,
@@ -80,6 +94,8 @@ export const portfolios = [
       "Platysign was my own first IT company which i started with some friends i knew from college. We did this for a couple of years but then went our own ways.",
     url: "https://portfolio.zenchirecords.com/platysign",
     image: "",
+    codes: "HTML, CSS, PHP",
+    tools: "Wordpress, Illustrator, Photo Shop, Sketch",
   },
   {
     id: 8,
@@ -90,6 +106,8 @@ export const portfolios = [
       "De Hoornse Damper is a store that sells vapes and supplies. I made a website for browsing their products and making a store order.",
     url: "",
     image: "",
+    codes: "HTML, CSS, Javascript, PHP",
+    tools: "Wordpress, Illustrator, Photo Shop",
   },
   {
     id: 9,
@@ -100,6 +118,8 @@ export const portfolios = [
       "Photomaster was a photo competition where people had to send in their best shots to win a prize. This is the design i made for them.",
     url: "https://portfolio.zenchirecords.com/photomaster_prototype",
     image: "",
+    codes: "HTML, CSS, Javascript",
+    tools: "Wordpress, Illustrator, Photo Shop, Figma",
   },
   {
     
@@ -111,6 +131,8 @@ export const portfolios = [
       "Jonai Tan is a freelance photographer. He asked me to create a portfolio for him where people can find his work. This is the design I made for him",
     url: "https://portfolio.zenchirecords.com/JT_photography",
     image: "",
+    codes: "HTML, CSS, Javascript",
+    tools: "Wordpress, Illustrator, Photo Shop, Sketch",
   },
   {
     id: 11,
@@ -121,5 +143,7 @@ export const portfolios = [
       "B&T Jeans was a small online pants selling company, this is the design i made for them.",
     url: "https://portfolio.zenchirecords.com/BNT",
     image: "",
+    codes: "HTML, CSS",
+    tools: "Illustrator, Photo Shop",
   },
 ];

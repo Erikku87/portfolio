@@ -75,7 +75,20 @@ const Portfolio = () => {
                 />
               </div>
             </Col>
-            <Col sm>{portfolio.description}</Col>
+            <Col sm>
+              {portfolio.description}
+              
+              <div className={stylesPortfolio.codes}>
+              Code:
+              <br />
+              {portfolio.codes}
+              </div>
+              <div className={stylesPortfolio.codes}>
+              Tools:
+              <br />
+              {portfolio.tools}
+              </div>
+            </Col>
           </Row>
         </ModalBody>
         <ModalFooter>

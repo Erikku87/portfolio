@@ -8,6 +8,7 @@
   margin-top:20px;
   padding: 5rem 20rem;
   
+  
 }
 .portfolioSize{
   width:100%;
@@ -18,7 +19,11 @@
 
 
 }
-
+.codes{
+  padding-top:10px;
+  font-weight: bold;
+  font-size:12px;
+}
 
 
 .portfolioItem{
