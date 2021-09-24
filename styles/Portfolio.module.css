@@ -11,7 +11,7 @@
 }
 .portfolioSize{
   width:100%;
-  height:300px;
+  height:auto;
   color: #fff;
   
   
@@ -25,6 +25,7 @@
   width:100%;
   cursor: pointer;
   transition:all 1s;
+  padding:10px !important;
 }
 .portfolioItem:hover{
 
