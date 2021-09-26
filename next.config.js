@@ -2,7 +2,7 @@ module.exports = {
   reactStrictMode: true,
   images: {
     loader: 'imgix',
-    path: 'https://portfolio.zenchirecords.com',
+    path: 'https://erikku.design',
   }
 
 
