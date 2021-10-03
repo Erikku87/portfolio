@@ -53,69 +53,66 @@ if (typeof window === "object") {
 }
 
 const currentNav = (thisNav) => {
-  if (thisNav === "Identity") {
-    return (
-      <>
-        <div className={stylesProfile.navHeading}>{thisNav}</div>
-        <div>
-          <ul>
-            <li className={stylesProfile.label}>Naam:</li>
-            <li>Eric Tjhie</li>
-            <li className={stylesProfile.label}>Geboren op:</li>
-            <li>13 - 10 - 1987</li>
-            <li className={stylesProfile.label}>Telefoon:</li>
-            <li>0619049059</li>
-            <li className={stylesProfile.label}>E-mail:</li>
-            <li>Erikkudesign@gmail.com</li>
-          </ul>
-        </div>
-      </>
-    );
+  switch (thisNav) {
+    case 'Identity':
+      return (
+        <>
+          <div className={stylesProfile.navHeading}>{thisNav}</div>
+          <div>
+            <ul>
+              <li className={stylesProfile.label}>Naam:</li>
+              <li>Eric Tjhie</li>
+              <li className={stylesProfile.label}>Geboren op:</li>
+              <li>13 - 10 - 1987</li>
+              <li className={stylesProfile.label}>Telefoon:</li>
+              <li>0619049059</li>
+              <li className={stylesProfile.label}>E-mail:</li>
+              <li>Erikkudesign@gmail.com</li>
+            </ul>
+          </div>
+        </>
+      );
+
+    case 'Who am I?':
+      return (
+        <>
+          <div className={stylesProfile.navHeading}>{thisNav}</div>
+          <div className={stylesProfile.whoami}>
+            <p>
+              Phasellus at bibendum velit, mattis fermentum nunc. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Etiam pellentesque diam
+              orci, ut aliquam ipsum finibus nec. Curabitur vehicula nunc eget
+              magna aliquet, laoreet placerat nunc condimentum. Vivamus ut
+              ullamcorper lectus, nec finibus orci. Sed viverra tincidunt purus at
+              porttitor. Duis rhoncus et nulla in dictum. Praesent placerat rutrum
+              metus, nec consectetur tortor fringilla non. Cras non vulputate
+              magna. Morbi placerat magna augue.
+            </p>
+          </div>
+        </>
+      );
+
+    case 'Projects':
+      window.scrollTo({ top: "700", behavior: "smooth" });
+      break;
+
+    case 'Contact':
+      return (
+        <>
+          <div className={stylesProfile.navHeading}>{thisNav}</div>
+          <div className={stylesProfile.whoami}>Hier komt een Forum</div>
+        </>
+      );
+    default:
+      return (
+        <>
+          <br />
+          <div className={stylesProfile.intro}><h1>Erikku.Design</h1></div>
+          <div><h7>Welcome to my portfolio!</h7></div>
+
+        </>
+      );
   }
-
-  if (thisNav === "Who am I?") {
-    return (
-      <>
-        <div className={stylesProfile.navHeading}>{thisNav}</div>
-        <div className={stylesProfile.whoami}>
-          <p>
-            Phasellus at bibendum velit, mattis fermentum nunc. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Etiam pellentesque diam
-            orci, ut aliquam ipsum finibus nec. Curabitur vehicula nunc eget
-            magna aliquet, laoreet placerat nunc condimentum. Vivamus ut
-            ullamcorper lectus, nec finibus orci. Sed viverra tincidunt purus at
-            porttitor. Duis rhoncus et nulla in dictum. Praesent placerat rutrum
-            metus, nec consectetur tortor fringilla non. Cras non vulputate
-            magna. Morbi placerat magna augue.
-          </p>
-        </div>
-      </>
-    );
-  }
-
-  if (thisNav === "Projects") {
-    //router.push('/Erikku.design#portfolioHeading', undefined, { shallow: true })
-    //document.getElementById('portfolioHeading').scrollIntoView();
-    window.scrollTo({ top: "700", behavior: "smooth" });
-  }
-  if (thisNav === "Contact") {
-    return (
-      <>
-        <div className={stylesProfile.navHeading}>{thisNav}</div>
-        <div className={stylesProfile.whoami}>Hier komt een Forum</div>
-      </>
-    );
-  }
-
-  return (
-    <>
-    <br />
-      <div className={stylesProfile.intro}><h1>Erikku.Design</h1></div>
-      <div><h7>Welcome to my portfolio!</h7></div>
-
-    </>
-  );
-
 };
 
 export default Profile;
