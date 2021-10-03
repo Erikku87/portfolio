@@ -5,6 +5,7 @@ import Link from "next/dist/client/link";
 
 const Profile = () => {
   const navs = ["Identity", "Who am I?", "Projects", "Contact"];
+  const [oldNavSelected, setOldNavSelected] = useState("");
   const [navSelected, setNavSelected] = useState("");
 
   return (
@@ -27,7 +28,13 @@ const Profile = () => {
                 type="button"
                 className={stylesProfile.profilebutton}
                 key={nav}
-                onClick={() => setNavSelected(nav)}
+                onClick={() => {
+                    if (nav === 'Projects') {
+                        window.scrollTo({ top: "700", behavior: "smooth" });
+                    } else {
+                        setNavSelected(nav)
+                    }
+                }}
               >
                 <li className={stylesProfile.label}> {nav}</li>
               </button>
@@ -72,7 +79,6 @@ const currentNav = (thisNav) => {
           </div>
         </>
       );
-
     case 'Who am I?':
       return (
         <>
@@ -91,11 +97,6 @@ const currentNav = (thisNav) => {
           </div>
         </>
       );
-
-    case 'Projects':
-      window.scrollTo({ top: "700", behavior: "smooth" });
-      break;
-
     case 'Contact':
       return (
         <>
