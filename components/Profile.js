@@ -2,7 +2,7 @@ import stylesProfile from "../styles/Profile.module.css";
 import React, { useState } from "react";
 import Image from "next/dist/client/image";
 import Link from "next/dist/client/link";
-import { useRouter } from "next/dist/client/router";
+
 
 const Profile = () => {
   const navs = ["Identity", "Who am I?", "Projects", "Contact"];
@@ -56,7 +56,7 @@ if (typeof window === "object") {
 }
 
 const currentNav = (thisNav) => {
-    const router = useRouter();
+    
     
 
     if(thisNav === "Identity"){
