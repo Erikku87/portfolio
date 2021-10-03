@@ -109,19 +109,10 @@ const currentNav = (thisNav) => {
 
   return (
     <>
-      <div className={stylesProfile.navHeading}>Identity</div>
-      <div>
-        <ul>
-          <li className={stylesProfile.label}>Naam:</li>
-          <li>Eric Tjhie</li>
-          <li className={stylesProfile.label}>Geboren op:</li>
-          <li>13 - 10 - 1987</li>
-          <li className={stylesProfile.label}>Telefoon:</li>
-          <li>0619049059</li>
-          <li className={stylesProfile.label}>E-mail:</li>
-          <li>Erikkudesign@gmail.com</li>
-        </ul>
-      </div>
+    <br />
+      <div className={stylesProfile.intro}><h1>Erikku.Design</h1></div>
+      <div><h7>Welcome to my portfolio!</h7></div>
+
     </>
   );
 
