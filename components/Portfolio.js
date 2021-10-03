@@ -7,7 +7,6 @@ import { Row } from "reactstrap";
 import { Col } from "reactstrap";
 import { portfolios } from "../db";
 
-
 const Portfolio = () => {
   const [modal0, setModal0] = useState(false);
   const [modal1, setModal1] = useState(false);
@@ -39,19 +38,17 @@ const Portfolio = () => {
   const imgHeight = 300;
   const priority = true;
 
-
   const setClipButtons = (portfolio) => {
     if (portfolio.clip) {
       return (
         <Button color="primary" onClick={eval(`toggle${portfolio.id}`)}>
-            <a href={portfolio.clip} target="blank_">
-             
-              Video
-            </a>
-          </Button>
-      )
+          <a href={portfolio.clip} target="blank_">
+            Video
+          </a>
+        </Button>
+      );
     }
-  }
+  };
 
   const setCurrentModal = (portfolio) => {
     return (
@@ -77,22 +74,21 @@ const Portfolio = () => {
             </Col>
             <Col sm>
               {portfolio.description}
-              
+
               <div className={stylesPortfolio.codes}>
-             <b> Code: </b>
-              <br />
-              {portfolio.codes}
+                <b> Code: </b>
+                <br />
+                {portfolio.codes}
               </div>
               <div className={stylesPortfolio.codes}>
-              <b>  Tools: </b>
-              <br />
-              {portfolio.tools}
+                <b> Tools: </b>
+                <br />
+                {portfolio.tools}
               </div>
             </Col>
           </Row>
         </ModalBody>
         <ModalFooter>
-
           {setClipButtons(portfolio)}
 
           <Button color="primary" onClick={eval(`toggle${portfolio.id}`)}>
@@ -105,7 +101,6 @@ const Portfolio = () => {
           <Button color="secondary" onClick={eval(`toggle${portfolio.id}`)}>
             Close
           </Button>
-          
         </ModalFooter>
       </Modal>
     );
@@ -153,17 +148,15 @@ const Portfolio = () => {
 
   return (
     <>
-      <div className={stylesPortfolio.portfolioHeading}>
+      <div  className={stylesPortfolio.portfolioHeading}>
         <div className={stylesPortfolio.headingLinks}></div>
         <div className={stylesPortfolio.headingMid}></div>
         <div className={stylesPortfolio.headingRechts}></div>
-      
       </div>
-      <div className={stylesPortfolio.portfolioHeading2}>
+      <div id="portfolioHeading" className={stylesPortfolio.portfolioHeading2}>
         <div className={stylesPortfolio.headingLinks2}></div>
         <div className={stylesPortfolio.headingMid2}>Projects</div>
         <div className={stylesPortfolio.headingRechts2}></div>
-      
       </div>
 
       <div id="portfolioframe" className={stylesPortfolio.portfolioFrame}>
@@ -181,7 +174,7 @@ if (typeof window === "object") {
   window.addEventListener("load", function () {
     document.getElementById("portfolioframe").style.opacity = "1";
     document.getElementById("portfolioframe").style.margin = "0px";
-   // document.getElementById("headingMid2").style.height = "100px";
+    // document.getElementById("headingMid2").style.height = "100px";
   });
 }
 
