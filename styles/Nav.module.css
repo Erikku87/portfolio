@@ -2,28 +2,39 @@
   font-size:25px;
     height: 50px;
     padding: 10px;
-    background-image: url("/images/sterren.jpg");
-  background-position:center 10%;
-    color: #fff;
+    background-color:white;
+  background-position:center 10%;  
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
-         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-         position: relative;
-         z-index: 999999;
-         
+    z-index: 999999;
+    border-bottom: 1px solid #781e1e;
   }
-  
+  .navimg{
+
+    margin-right:15px;
+  }
+  .design{
+    color: #ff0000;
+  }
+
   .nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
     margin: 0px !important; 
+   
   }
   
   .nav ul li a {
-    margin-right: 15px;
+    margin-right: 3px;
     line-height: normal;
+    color: black !important;
+  }
+
+  .fakenav{
+    height: 50px;
+   
+   
   }

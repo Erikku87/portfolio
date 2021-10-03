@@ -9,3 +9,13 @@
     width:400px;
     height:320px;
 }
+
+@media (max-width: 600px) {
+
+    .modalImage{
+
+        width:300px !important;
+        height:240px !important;
+    }
+      
+    }

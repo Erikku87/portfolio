@@ -79,12 +79,12 @@ const Portfolio = () => {
               {portfolio.description}
               
               <div className={stylesPortfolio.codes}>
-              Code:
+             <b> Code: </b>
               <br />
               {portfolio.codes}
               </div>
               <div className={stylesPortfolio.codes}>
-              Tools:
+              <b>  Tools: </b>
               <br />
               {portfolio.tools}
               </div>
@@ -153,13 +153,17 @@ const Portfolio = () => {
 
   return (
     <>
-      <div
-        id="portfolioHeader"
-        className={`${stylesPortfolio.portfolioHeader} ${stylesPortfolio.greenglow} ${stylesPortfolio.greenglow2}`}
-      >
-        <div className={stylesPortfolio.portfolioHeaderText}>
-          <h1>My Projects</h1>
-        </div>
+      <div className={stylesPortfolio.portfolioHeading}>
+        <div className={stylesPortfolio.headingLinks}></div>
+        <div className={stylesPortfolio.headingMid}></div>
+        <div className={stylesPortfolio.headingRechts}></div>
+      
+      </div>
+      <div className={stylesPortfolio.portfolioHeading2}>
+        <div className={stylesPortfolio.headingLinks2}></div>
+        <div className={stylesPortfolio.headingMid2}>Projects</div>
+        <div className={stylesPortfolio.headingRechts2}></div>
+      
       </div>
 
       <div id="portfolioframe" className={stylesPortfolio.portfolioFrame}>
@@ -177,7 +181,7 @@ if (typeof window === "object") {
   window.addEventListener("load", function () {
     document.getElementById("portfolioframe").style.opacity = "1";
     document.getElementById("portfolioframe").style.margin = "0px";
-    document.getElementById("portfolioHeader").style.opacity = "1";
+   // document.getElementById("headingMid2").style.height = "100px";
   });
 }
 

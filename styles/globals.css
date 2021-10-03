@@ -7,9 +7,11 @@ body {
 }
 button {
   margin: 0;
-   font-family: initial !important; 
-  font-size: 40px !important;
+   font-family: inherit !important; 
+  font-size: 20px !important;
    line-height: normal !important;
+   border:none;
+   background:none;
 }
 .modal-footer button{
 
@@ -20,7 +22,7 @@ button {
 
 li{
 
-  cursor:pointer;
+  
 }
 a {
   color: inherit;

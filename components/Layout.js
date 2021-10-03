@@ -14,7 +14,6 @@ const Layout = ({ children }) => {
                     <Header />
                     {children}
                     <Profile />
-                    <br />
                     <Portfolio />
                 </main>
             </div>

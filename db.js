@@ -19,7 +19,7 @@ export const portfolios = [
     name: "waarderuil",
     description:
       "Waarderuil.nl is one of my personal projects. The goal is to create a platform that makes it easy for people to find and trade the right stuff so we can make this planet and it's resources more sustainable. ",
-    url: "https://portfolio.zenchirecords.com/waarderuil/",
+    url: "https://erikku.design/waarderuil/",
     image: "",
     codes: "HTML, CSS, Javascript",
     tools: "Illustrator, Photo Shop, Figma",
@@ -80,7 +80,7 @@ export const portfolios = [
     name: "Staggering Design",
     description:
       "Staggering Design was a small IT company that delivered IT solutions. This is the website i made for them.",
-    url: "https://portfolio.zenchirecords.com/Staggering_prototype",
+    url: "https://erikku.design/Staggering_prototype",
     image: "",
     codes: "HTML, CSS, Javascript",
     tools: "Illustrator, Photo Shop, Sketch",
@@ -92,7 +92,7 @@ export const portfolios = [
     name: "Platysign",
     description:
       "Platysign was my own first IT company which i started with some friends i knew from college. We did this for a couple of years but then went our own ways.",
-    url: "https://portfolio.zenchirecords.com/platysign",
+    url: "https://erikku.design/platysign",
     image: "",
     codes: "HTML, CSS, PHP",
     tools: "Wordpress, Illustrator, Photo Shop, Sketch",
@@ -116,7 +116,7 @@ export const portfolios = [
     name: "Photomaster",
     description:
       "Photomaster was a photo competition where people had to send in their best shots to win a prize. This is the design i made for them.",
-    url: "https://portfolio.zenchirecords.com/photomaster_prototype",
+    url: "https://erikku.design/photomaster_prototype",
     image: "",
     codes: "HTML, CSS, Javascript",
     tools: "Wordpress, Illustrator, Photo Shop, Figma",
@@ -129,7 +129,7 @@ export const portfolios = [
     name: "JT Photography",
     description:
       "Jonai Tan is a freelance photographer. He asked me to create a portfolio for him where people can find his work. This is the design I made for him",
-    url: "https://portfolio.zenchirecords.com/JT_photography",
+    url: "https://erikku.design/JT_photography",
     image: "",
     codes: "HTML, CSS, Javascript",
     tools: "Wordpress, Illustrator, Photo Shop, Sketch",
@@ -141,7 +141,7 @@ export const portfolios = [
     name: "BNT",
     description:
       "B&T Jeans was a small online pants selling company, this is the design i made for them.",
-    url: "https://portfolio.zenchirecords.com/BNT",
+    url: "https://erikku.design/BNT",
     image: "",
     codes: "HTML, CSS",
     tools: "Illustrator, Photo Shop",

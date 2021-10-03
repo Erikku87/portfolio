@@ -6,8 +6,9 @@
   transition: all 1.5s;
   opacity:0;
   margin-top:20px;
-  padding: 5rem 20rem;
-  
+  padding: 5rem 10rem;
+  background-size: cover;
+ 
   
 }
 .portfolioSize{
@@ -21,8 +22,9 @@
 }
 .codes{
   padding-top:10px;
-  font-weight: bold;
+  
   font-size:12px;
+  
 }
 
 
@@ -31,6 +33,7 @@
   cursor: pointer;
   transition:all 1s;
   padding:10px !important;
+  ;
 }
 .portfolioItem:hover{
 
@@ -46,19 +49,21 @@
   height:100px;
   opacity:0;
   transition: all 1s;
-  color:white;
-  
-  background-image: url("/images/sterren.jpg");
+  color:black;
+  background-color:white;
   background-position:0% 32%;
   display: flex;
-    align-items: center;
-    justify-content: flex-start;  
-    -webkit-filter: brightness(90%);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  align-items: center;
+  border-bottom: 1px solid #781e1e;
+
+  justify-content: center;  
+  box-shadow: rgba(156, 18, 18, 0.4) 0px 2px 25px;
+    
 }
 
 .portfolioHeaderText{
   margin:auto; 
+  font-size:35px;
 
 }
 
@@ -68,13 +73,147 @@
 
 }
 
+.portfolioHeading{
+  width:100%;
+  height:100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.headingLinks{
+  height:100px;
+  width:21%;
+
+  border-bottom: 1px solid #781e1e;
+ 
+}
+.headingMid{
+  height:100px;
+  width:9%;
 
 
+}
+.headingRechts{
+  height:100px;
+  width:70%;
+
+  border-bottom: 1px solid #781e1e;
+
+}
+
+.portfolioHeading2{
+  width:100%;
+  height:100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.headingLinks2{
+  
+  width:21%;
 
 
+ 
+}
+.headingMid2{
+  height:100px;
+  width:9%;
+  font-size:30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 1px solid #781e1e;
+  border-left: 1px solid #781e1e;
+  border-right: 1px solid #781e1e;
+  
+  
+}
+
+.headingRechts2{
+  width:70%;
 
 
+  
+}
 
+
+@media (max-width: 1024px) {
+
+  .portfolioFrame{
+
+    margin-top:20px;
+    padding: 5rem 5rem;
+
+   
+    
+  }
+
+  .portfolioHeading2{
+  
+    height:50px;
+
+  
+  }
+
+  .headingLinks2{
+  
+    width:9%;
+  
+  
+  }
+
+  .headingMid2{
+  
+    width:31%;
+    height:50px;
+    font-size:25px;
+    
+  }
+  .headingRechts2{
+    width:60%;
+  
+  
+    
+  }
+
+  .headingLinks{
+    height:100px;
+    width:9%;
+  
+    border-bottom: 1px solid #781e1e;
+   
+  }
+  .headingMid{
+    height:100px;
+    width:31%;
+  
+  
+  }
+  .headingRechts{
+    height:100px;
+    width:60%;
+  
+    border-bottom: 1px solid #781e1e;
+  
+  }
+}
+
+@media (max-width: 600px) {
+
+  .portfolioFrame{
+
+    
+    padding: 2rem 2rem;
+
+   
+    
+  }
+}
 
 
 

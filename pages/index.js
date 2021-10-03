@@ -5,10 +5,10 @@ export default function Home() {
   <div>
     <Head>
       <title>
-          Eric Tjhie
+          Erikku Design
       </title>
       <meta name='keywords' content='web development, programming' />
-
+      <meta property="og:image" content="/images/ogimage.jpg" />
     </Head>
   </div>
   )
